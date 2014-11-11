@@ -28,12 +28,13 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 
     // 第一个参数表示使用哪个域名
     // 已有的模块列表：
-    // QcloudApi::MODULE_CVM    对应  cvm.api.qcloud.com
-    // QcloudApi::MODULE_CDB    对应  cdb.api.qcloud.com
-    // QcloudApi::MODULE_LB     对应  lb.api.qcloud.com
-    // QcloudApi::MODULE_TRADE  对应  trade.api.qcloud.com
-    // QcloudApi::MODULE_SEC    对应  csec.api.qcloud.com
-    // QcloudApi::MODULE_IMAGE  对应  image.api.qcloud.com
+    // QcloudApi::MODULE_CVM      对应   cvm.api.qcloud.com
+    // QcloudApi::MODULE_CDB      对应   cdb.api.qcloud.com
+    // QcloudApi::MODULE_LB       对应   lb.api.qcloud.com
+    // QcloudApi::MODULE_TRADE    对应   trade.api.qcloud.com
+    // QcloudApi::MODULE_SEC      对应   csec.api.qcloud.com
+    // QcloudApi::MODULE_IMAGE    对应   image.api.qcloud.com
+    // QcloudApi::MODULE_MONITOR  对应   monitor.api.qcloud.com
     $service = QcloudApi::load(QcloudApi::MODULE_CVM, $config);
 
     // 请求参数，请参考wiki文档上对应接口的说明

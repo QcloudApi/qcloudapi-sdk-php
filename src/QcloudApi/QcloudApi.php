@@ -33,7 +33,7 @@ class QcloudApi
 
     /**
      * MODULE_SEC
-     * 安全
+     * 云安全
      */
     const MODULE_SEC = 'sec';
 
@@ -42,6 +42,12 @@ class QcloudApi
      * 镜像
      */
     const MODULE_IMAGE = 'image';
+
+    /**
+     * MODULE_MONITOR
+     * 云监控
+     */
+    const MODULE_MONITOR = 'monitor';
 
     /**
      * load
