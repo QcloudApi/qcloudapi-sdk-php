@@ -20,6 +20,12 @@ class QcloudApi_Common_Request
     protected static $_rawResponse = '';
 
     /**
+     * $_version
+     * @var string
+     */
+    protected static $_version = 'SDK_PHP_1.0';
+
+    /**
      * getRequestUrl
      * 获取请求url
      */
@@ -60,6 +66,7 @@ class QcloudApi_Common_Request
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
 
+        $paramArray['RequestClient'] = self::$_version;
         $plainText = QcloudApi_Common_Sign::makeSignPlainText($paramArray,
             $requestMethod, $requestHost, $requestPath);
 
@@ -96,6 +103,7 @@ class QcloudApi_Common_Request
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
 
+        $paramArray['RequestClient'] = self::$_version;
         $plainText = QcloudApi_Common_Sign::makeSignPlainText($paramArray,
             $requestMethod, $requestHost, $requestPath);
 
