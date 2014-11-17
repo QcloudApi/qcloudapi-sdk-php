@@ -50,10 +50,13 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
     $a = $service->generateUrl('DescribeInstances', $package);
 
     if ($a === false) {
-    // 请求失败，解析错误信息
+        // 请求失败，解析错误信息
         $error = $service->getError();
         echo "Error code:" . $error->getCode() . ' message:' . $error->getMessage();
+
+        // 对于异步任务接口，可以通过下面的方法获取对应任务执行的信息
+        $detail = $error->getExt();
     } else {
-    // 请求成功
+        // 请求成功
         var_dump($a);
     }

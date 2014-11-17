@@ -241,8 +241,8 @@ abstract class QcloudApi_Module_Base extends QcloudApi_Common_Base
         if ($rawResponse['code']) {
             $ext = '';
             require_once QCLOUDAPI_ROOT_PATH . '/Common/Error.php';
-            if ($rawResponse['code'] == QcloudApi_Common_Error::RESOURCE_PARTLY_FAILED) {
-                // 批量异步操作，部分错误
+            if (isset($rawResponse['detail'])) {
+                // 批量异步操作，返回任务失败信息
                 $ext = $rawResponse['detail'];
             }
             $this->setError($rawResponse['code'], $rawResponse['message'], $ext);
