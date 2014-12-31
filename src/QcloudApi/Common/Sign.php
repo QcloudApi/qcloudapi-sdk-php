@@ -73,6 +73,10 @@ class QcloudApi_Common_Sign
             {
                 continue;
             }
+            // 排除上传文件的参数
+            if ($requestMethod == 'POST' && substr($value, 0, 1) == '@') {
+                continue;
+            }
             // 把 参数中的 _ 替换成 .
             if (strpos($key, '_'))
             {

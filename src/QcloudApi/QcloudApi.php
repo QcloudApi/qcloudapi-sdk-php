@@ -50,6 +50,12 @@ class QcloudApi
     const MODULE_MONITOR = 'monitor';
 
     /**
+     * MODULE_CDN
+     * CDN
+     */
+    const MODULE_CDN = 'cdn';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称

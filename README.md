@@ -2,6 +2,10 @@
 
 qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方便的使用腾讯云的API而开发的SDK工具包。
 
+#### 更新历史
+
+* [12/30] 添加CDN模块
+
 #### 资源
 
 * [公共参数](http://wiki.qcloud.com/wiki/%E5%85%AC%E5%85%B1%E5%8F%82%E6%95%B0)
@@ -35,6 +39,7 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
     // QcloudApi::MODULE_SEC      对应   csec.api.qcloud.com
     // QcloudApi::MODULE_IMAGE    对应   image.api.qcloud.com
     // QcloudApi::MODULE_MONITOR  对应   monitor.api.qcloud.com
+    // QcloudApi::MODULE_CDN      对应   cdn.api.qcloud.com
     $service = QcloudApi::load(QcloudApi::MODULE_CVM, $config);
 
     // 请求参数，请参考wiki文档上对应接口的说明
@@ -42,6 +47,21 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
                      'limit' => 3,
                      // 'Region' => 'gz' // 当Region不是上面配置的DefaultRegion值时，可以重新指定请求的Region
                     );
+
+
+    // 请求前可以通过下面四个方法重新设置请求的secretId/secretKey/region/method参数
+    // 重新设置secretId
+    $secretId = '你的secretId';
+    $service->setConfigSecretId($secretId);
+    // 重新设置secretKey
+    $secretKey = '你的secretKey';
+    $service->setConfigSecretKey($secretKey);
+    // 重新设置region
+    $region = 'sh';
+    $service->setConfigDefaultRegion($region);
+    // 重新设置method
+    $method = 'POST';
+    $service->setConfigRequestMethod($method);
 
     // 请求方法为对应接口的接口名，请参考wiki文档上对应接口的接口名
     $a = $service->DescribeInstances($package);

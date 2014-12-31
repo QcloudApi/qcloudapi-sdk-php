@@ -139,7 +139,7 @@ abstract class QcloudApi_Module_Base extends QcloudApi_Common_Base
      */
     public function setConfigRequestMethod($method)
     {
-        $this->_requestMethod = $method;
+        $this->_requestMethod = strtoupper($method);
         return $this;
     }
 
@@ -211,7 +211,10 @@ abstract class QcloudApi_Module_Base extends QcloudApi_Common_Base
     {
         $action = ucfirst($name);
 
-        $params = (array) $arguments[0];
+        $params = array();
+        if (is_array($arguments) && !empty($arguments)) {
+            $params = (array) $arguments[0];
+        }
         $params['Action'] = $action;
 
         if (!isset($params['Region']))
