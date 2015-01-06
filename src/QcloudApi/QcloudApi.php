@@ -56,6 +56,12 @@ class QcloudApi
     const MODULE_CDN = 'cdn';
 
     /**
+     * MODULE_VOD
+     * VOD
+     */
+    const MODULE_VOD = 'vod';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称

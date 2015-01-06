@@ -23,7 +23,7 @@ class QcloudApi_Common_Request
      * $_version
      * @var string
      */
-    protected static $_version = 'SDK_PHP_1.0';
+    protected static $_version = 'SDK_PHP_1.1';
 
     /**
      * getRequestUrl
