@@ -62,7 +62,6 @@ class QcloudApi
     const MODULE_VOD = 'vod';
     
     /**
-     * MODULE_YUNSOU
      * YUNSOU
      */
     const MODULE_VOD = 'yunsou';
