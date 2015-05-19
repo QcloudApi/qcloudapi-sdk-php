@@ -130,6 +130,7 @@ class QcloudApi_Common_Request
 
         if ($method == 'POST')
         {
+            $paramArray = is_array( $paramArray ) ? http_build_query( $paramArray ) : $paramArray;
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $paramArray);
         }
