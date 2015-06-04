@@ -65,6 +65,11 @@ class QcloudApi
      * YUNSOU
      */
     const MODULE_YUNSOU = 'yunsou';
+	
+	  /**
+     * cns
+     */
+    const MODULE_CNS = 'cns';
 
     /**
      * load
