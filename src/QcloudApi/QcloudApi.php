@@ -70,6 +70,11 @@ class QcloudApi
      * cns
      */
     const MODULE_CNS = 'cns';
+	
+	  /**
+     * weizhi
+     */
+    const MODULE_WENZHI = 'wenzhi';
 
     /**
      * load
