@@ -75,6 +75,11 @@ class QcloudApi
      * wenzhi
      */
     const MODULE_WENZHI = 'wenzhi';
+    
+    /**
+     * MARKET
+     */
+    const MODULE_MARKET = 'market';
 
     /**
      * load
