@@ -30,6 +30,12 @@ class QcloudApi
      * 产品售卖
      */
     const MODULE_TRADE = 'trade';
+    
+    /**
+     * MODULE_BILL
+     * 账单
+     */
+    const MODULE_BILL = 'bill';
 
     /**
      * MODULE_SEC
