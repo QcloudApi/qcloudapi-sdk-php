@@ -62,6 +62,12 @@ class QcloudApi
     const MODULE_CDN = 'cdn';
 
     /**
+     * MODULE_VPC
+     * VPC
+     */
+    const MODULE_VPC = 'vpc';
+
+    /**
      * MODULE_VOD
      * VOD
      */
