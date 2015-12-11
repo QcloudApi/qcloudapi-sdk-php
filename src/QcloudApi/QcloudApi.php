@@ -98,6 +98,12 @@ class QcloudApi
      * 弹性公网Ip
      */
     const MODULE_EIP = 'eip';
+    
+    /**
+     * MODULE_LIVE
+     * 直播
+     */
+    const MODULE_LIVE = 'live';
 
     /**
      * load
