@@ -92,6 +92,12 @@ class QcloudApi
      * MARKET
      */
     const MODULE_MARKET = 'market';
+    
+    /**
+     * MODULE_EIP
+     * 弹性公网Ip
+     */
+    const MODULE_EIP = 'eip';
 
     /**
      * load
