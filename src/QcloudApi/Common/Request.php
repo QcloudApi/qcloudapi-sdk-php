@@ -24,6 +24,13 @@ class QcloudApi_Common_Request
      * @var string
      */
     protected static $_version = 'SDK_PHP_1.1';
+    
+    /**
+     * $_timeOut
+     * 设置连接主机的超时时间
+     * @var int 数量级：秒
+     * */
+    protected static $_timeOut = 10;
 
     /**
      * getRequestUrl
@@ -142,6 +149,7 @@ class QcloudApi_Common_Request
         self::$_requestUrl = $url;
 
         curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_TIMEOUT,self::$_timeOut);
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
