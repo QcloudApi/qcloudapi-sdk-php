@@ -1,0 +1,15 @@
+{
+    "name": "tencentyun/qcloudapi-sdk-php",
+    "keywords": ["tencentyun", "qcloud", "sdk"],
+    "homepage": "http://www.qcloud.com/",
+    "license": "MIT",
+    "description": "php sdk for www.qcloud.com cos service",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/QcloudApi/QcloudApi.php"
+        ]
+    }
+}
