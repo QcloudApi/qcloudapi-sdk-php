@@ -3,7 +3,7 @@
     "keywords": ["tencentyun", "qcloud", "sdk"],
     "homepage": "http://www.qcloud.com/",
     "license": "MIT",
-    "description": "php sdk for www.qcloud.com cos service",
+    "description": "php sdk for qcloudapi",
     "require": {
         "php": ">=5.3.0"
     },
