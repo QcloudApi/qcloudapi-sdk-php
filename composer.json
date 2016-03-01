@@ -1,5 +1,5 @@
 {
-    "name": "tencentyun-api/qcloud-api-sdk",
+    "name": "tencentyun-api/qcloudapi-sdk-php",
     "keywords": ["tencentyun", "qcloud", "sdk"],
     "homepage": "http://www.qcloud.com/",
     "license": "MIT",
