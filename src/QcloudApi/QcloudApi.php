@@ -106,6 +106,18 @@ class QcloudApi
     const MODULE_LIVE = 'live';
 
     /**
+     * MODULE_SNAPSHOT
+     * 快照
+     */
+    const MODULE_SNAPSHOT = 'snapshot';
+
+    /**
+     * MODULE_CBS
+     * 云硬盘
+     */
+    const MODULE_CBS = 'cbs';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
