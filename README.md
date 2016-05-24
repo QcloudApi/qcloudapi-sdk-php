@@ -4,7 +4,7 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 
 #### 更新历史
 
-* [12/30] 添加CBS和SNAPSHOT模块
+* [5/24] 添加CBS和SNAPSHOT模块
 
 #### 资源
 
