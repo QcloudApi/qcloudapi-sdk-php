@@ -116,6 +116,12 @@ class QcloudApi
      * 云硬盘
      */
     const MODULE_CBS = 'cbs';
+    
+    /**
+     * MODULE_SCALING
+     * 弹性伸缩
+     */
+    const MODULE_SCALING = 'scaling';
 
     /**
      * load
