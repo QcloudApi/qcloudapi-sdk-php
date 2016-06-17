@@ -8,6 +8,12 @@ define('QCLOUDAPI_ROOT_PATH', dirname(__FILE__));
 class QcloudApi
 {
     /**
+     * MODULE_ACCOUNT
+     * 用户账户
+     */
+    const MODULE_ACCOUNT   = 'account';
+    
+    /**
      * MODULE_CVM
      * 云服务器
      */
