@@ -128,6 +128,12 @@ class QcloudApi
      * 弹性伸缩
      */
     const MODULE_SCALING = 'scaling';
+    
+    /**
+     * MODULE_CMEM
+     * 云缓存
+     */
+    const MODULE_CMEM = 'cmem';
 
     /**
      * load
