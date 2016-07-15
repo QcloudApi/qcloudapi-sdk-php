@@ -134,6 +134,12 @@ class QcloudApi
      * 云缓存
      */
     const MODULE_CMEM = 'cmem';
+    
+    /**
+     * MODULE_TDSQL
+     * 云数据库TDSQL
+     */
+    const MODULE_CMEM = 'tdsql';
 
     /**
      * load
