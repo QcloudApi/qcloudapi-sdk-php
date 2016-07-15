@@ -4,6 +4,7 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 
 #### 更新历史
 
+* [7/15]增加Tdsql模块
 * [7/6] 增加Cmem模块
 * [6/17] 增加account模块
 * [5/25] 添加Cbs、Snapshot和Scaling模块
