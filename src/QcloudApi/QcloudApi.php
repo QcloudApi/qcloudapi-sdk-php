@@ -139,7 +139,7 @@ class QcloudApi
      * MODULE_TDSQL
      * 云数据库TDSQL
      */
-    const MODULE_CMEM = 'tdsql';
+    const MODULE_TDSQL = 'tdsql';
 
     /**
      * load
