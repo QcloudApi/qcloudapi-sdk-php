@@ -140,6 +140,12 @@ class QcloudApi
      * 云数据库TDSQL
      */
     const MODULE_TDSQL = 'tdsql';
+    
+        /**
+     * MODULE_BM
+     * 黑石BM
+     */
+    const MODULE_BM = 'bm';
 
     /**
      * load
