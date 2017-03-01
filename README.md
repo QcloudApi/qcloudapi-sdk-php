@@ -51,9 +51,8 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
                      'limit' => 3,
                      // 'Region' => 'gz', // 当Region不是上面配置的DefaultRegion值时，可以重新指定请求的Region
                      'SignatureMethod' => 'HmacSHA256',//指定所要用的签名算法，可选HmacSHA256或HmacSHA1，默认为HmacSHA1
-                   );
-
-
+                     );
+                     
     // 请求前可以通过下面四个方法重新设置请求的secretId/secretKey/region/method参数
     // 重新设置secretId
     $secretId = '你的secretId';
