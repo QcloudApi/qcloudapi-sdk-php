@@ -4,6 +4,7 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 
 #### 更新历史
 
+* [3/1]增加对HmacSHA1签名和HmacSHA256签名兼容的支持
 * [7/15]增加Tdsql模块
 * [7/6] 增加Cmem模块
 * [6/17] 增加account模块
@@ -48,8 +49,9 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
     // 请求参数，请参考wiki文档上对应接口的说明
     $package = array('offset' => 0,
                      'limit' => 3,
-                     // 'Region' => 'gz' // 当Region不是上面配置的DefaultRegion值时，可以重新指定请求的Region
-                    );
+                     // 'Region' => 'gz', // 当Region不是上面配置的DefaultRegion值时，可以重新指定请求的Region
+                     'SignatureMethod' => 'HmacSHA256',//在这里指定所要用的签名算法，可选HmacSHA256或HmacSHA1，默认为HmacSHA1
+                   );
 
 
     // 请求前可以通过下面四个方法重新设置请求的secretId/secretKey/region/method参数
