@@ -19,9 +19,9 @@ class QcloudApi_Common_Sign
         case 'HmacSHA1':
             $retStr = base64_encode(hash_hmac('sha1', $srcStr, $secretKey, true));
             break;
-            // case 'HmacSHA256':
-            // $retStr = base64_encode(hash_hmac('sha256', $srcStr, $secretKey, true));
-            // break;
+        case 'HmacSHA256':
+            $retStr = base64_encode(hash_hmac('sha256', $srcStr, $secretKey, true));
+            break;
         default:
             throw new Exception($method . ' is not a supported encrypt method');
             return false;
