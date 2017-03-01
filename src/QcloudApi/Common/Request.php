@@ -72,12 +72,16 @@ class QcloudApi_Common_Request
 
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
+        
+        $signMethod = 'HmacSHA1';
+        if (isset($paramArray['SignatureMethod']) && $paramArray['SignatureMethod'] == "HmacSHA256")
+            $signMethod= 'HmacSHA256';
 
         $paramArray['RequestClient'] = self::$_version;
         $plainText = QcloudApi_Common_Sign::makeSignPlainText($paramArray,
             $requestMethod, $requestHost, $requestPath);
 
-        $paramArray['Signature'] = QcloudApi_Common_Sign::sign($plainText, $secretKey);
+        $paramArray['Signature'] = QcloudApi_Common_Sign::sign($plainText, $secretKey, $signMethod);
 
         $url = 'https://' . $requestHost . $requestPath;
         if ($requestMethod == 'GET') {
@@ -109,12 +113,16 @@ class QcloudApi_Common_Request
 
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
-
+        
+        $signMethod = 'HmacSHA1';
+        if (isset($paramArray['SignatureMethod']) && $paramArray['SignatureMethod'] == "HmacSHA256")
+            $signMethod= 'HmacSHA256';
+        
         $paramArray['RequestClient'] = self::$_version;
         $plainText = QcloudApi_Common_Sign::makeSignPlainText($paramArray,
             $requestMethod, $requestHost, $requestPath);
 
-        $paramArray['Signature'] = QcloudApi_Common_Sign::sign($plainText, $secretKey);
+        $paramArray['Signature'] = QcloudApi_Common_Sign::sign($plainText, $secretKey, $signMethod);
 
         $url = 'https://' . $requestHost . $requestPath;
 
