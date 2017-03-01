@@ -10,7 +10,7 @@ $config = array('SecretId'       => '你的secretId',
 
 $cvm = QcloudApi::load(QcloudApi::MODULE_CVM, $config);
 
-$package = array('offset' => 0, 'limit' => 3);
+$package = array('offset' => 0, 'limit' => 3, 'SignatureMethod' =>'HmacSHA256');
 
 $a = $cvm->DescribeInstances($package);
 // $a = $cvm->generateUrl('DescribeInstances', $package);
