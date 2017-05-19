@@ -25,6 +25,12 @@ class QcloudApi_Common_Request
      */
     protected static $_version = 'SDK_PHP_1.1';
     
+     /**
+     * $_action_version
+     * @var string
+     */
+    protected static $_action_version = '2017-03-12';
+    
     /**
      * $_timeOut
      * 设置连接主机的超时时间
@@ -73,6 +79,9 @@ class QcloudApi_Common_Request
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
         
+        if (!isset($paramArray['Version']))
+            $paramArray['Version'] =  self::$_action_version;
+        
         $signMethod = 'HmacSHA1';
         if (isset($paramArray['SignatureMethod']) && $paramArray['SignatureMethod'] == "HmacSHA256")
             $signMethod= 'HmacSHA256';
@@ -110,6 +119,9 @@ class QcloudApi_Common_Request
 
         if (!isset($paramArray['Nonce']))
             $paramArray['Nonce'] = rand(1, 65535);
+        
+        if (!isset($paramArray['Version']))
+            $paramArray['Version'] =  self::$_action_version;
 
         if (!isset($paramArray['Timestamp']))
             $paramArray['Timestamp'] = time();
