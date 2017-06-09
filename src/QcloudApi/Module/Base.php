@@ -236,7 +236,7 @@ abstract class QcloudApi_Module_Base extends QcloudApi_Common_Base
      */
     protected function _dealResponse($rawResponse)
     {
-        if (!is_array($rawResponse) || !isset($rawResponse['code'])) {
+        if (!is_array($rawResponse) || (!isset($rawResponse['code']) && !isset($rawResponse['Response']))) {
             $this->setError("", 'request falied!');
             return false;
         }
