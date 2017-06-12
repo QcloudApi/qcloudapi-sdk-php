@@ -141,11 +141,17 @@ class QcloudApi
      */
     const MODULE_TDSQL = 'tdsql';
     
-        /**
+    /**
      * MODULE_BM
      * 黑石BM
      */
     const MODULE_BM = 'bm';
+
+    /**
+     * MODULE_WSS
+     * SSL证书
+     */
+    const MODULE_WSS = 'wss';
 
     /**
      * load
