@@ -4,6 +4,7 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 
 #### 更新历史
 
+* [2017/8/7] 新增Feecenter模块
 * [2017/7/31] 新增Bmlb模块
 * [2017/7/12] 回滚：不默认传Version参数
 * [5/19]设置接口默认Version： Cvm模块新版本API已经上线，通过是否传Version区分新旧版本。SDK默认调用新接口，因此需要增加Version的默认设置。 CvmAPI接口介绍见：https://www.qcloud.com/document/api/213/569
