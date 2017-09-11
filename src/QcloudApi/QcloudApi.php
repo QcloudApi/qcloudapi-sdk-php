@@ -160,6 +160,18 @@ class QcloudApi
     const MODULE_FEECENTER = 'feecenter';
 
     /**
+     * MODULE_BMEIP
+     * 黑石eip
+     */
+    const MODULE_BMEIP = 'bmeip';
+
+    /**
+     * MODULE_BMVPC
+     * 黑石vpc
+     */
+    const MODULE_BMVPC = 'bmvpc';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
