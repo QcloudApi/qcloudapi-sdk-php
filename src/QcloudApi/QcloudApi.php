@@ -172,6 +172,12 @@ class QcloudApi
     const MODULE_BMVPC = 'bmvpc';
 
     /**
+     * MODULE_BGPIP
+     * 大禹网络安全
+     */
+    const MODULE_BGPIP = 'bgpip';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
