@@ -1,6 +1,6 @@
 ### qcloudapi-sdk-php
 
-qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方便的使用腾讯云的API而开发的SDK工具包。
+qcloudapi-sdk-php 是为了让 PHP 开发者能够在自己的代码里更快捷方便的使用腾讯云的 API 而开发的 SDK 工具包。
 
 #### 更新历史
 
@@ -25,9 +25,12 @@ qcloudapi-sdk-php是为了让PHP开发者能够在自己的代码里更快捷方
 #### 入门
 
 1. 申请安全凭证。
-在第一次使用云API之前，用户首先需要在腾讯云网站上申请安全凭证，安全凭证包括 SecretId 和 SecretKey, SecretId 是用于标识 API 调用者的身份，SecretKey是用于加密签名字符串和服务器端验证签名字符串的密钥。SecretKey 必须严格保管，避免泄露。
+在第一次使用云 API 之前，用户首先需要在腾讯云网站上申请安全凭证，安全凭证包括 SecretId 和 SecretKey, SecretId 是用于标识 API 调用者的身份，SecretKey是用于加密签名字符串和服务器端验证签名字符串的密钥。SecretKey 必须严格保管，避免泄露。
 
 2. 下载SDK，放入到您的程序目录。
+[在 github 查看 >>](https://github.com/QcloudApi/qcloudapi-sdk-php)
+[下载 PHP SDK >>](https://mc.qcloudimg.com/static/archive/cd1857b4d9a9aeb0179e72a59f235c41/qcloudapi-sdk-php-master.zip)
+
 使用方法请参考下面的例子。
 
 #### 例子
