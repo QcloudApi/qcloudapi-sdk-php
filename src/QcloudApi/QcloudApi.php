@@ -178,6 +178,12 @@ class QcloudApi
     const MODULE_BGPIP = 'bgpip';
 
     /**
+     * MODULE_CLOUDAUDIT
+     * 云审计模块
+     */
+    const MODULE_CLOUDAUDIT = 'cloudaudit';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
