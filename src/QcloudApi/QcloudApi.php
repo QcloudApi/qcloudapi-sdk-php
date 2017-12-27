@@ -208,6 +208,12 @@ class QcloudApi
     const MODULE_TMT = 'tmt';
 
     /**
+     * MODULE_BATCH
+     * 批量计算
+     */
+    const MODULE_BATCH = 'batch';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
