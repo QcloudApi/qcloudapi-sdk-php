@@ -5,6 +5,7 @@ latest (now)
 ------------
 
 * add dfw module
+* add scf module
 
 history
 -------

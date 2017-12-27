@@ -190,6 +190,12 @@ class QcloudApi
     const MODULE_DFW = 'dfw';
 
     /**
+     * MODULE_SCF
+     * 无服务器云函数
+     */
+    const MODULE_SCF = 'scf';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
