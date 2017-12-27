@@ -184,6 +184,12 @@ class QcloudApi
     const MODULE_CLOUDAUDIT = 'cloudaudit';
 
     /**
+     * MODULE_DFW
+     * 安全组模块
+     */
+    const MODULE_DFW = 'dfw';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
