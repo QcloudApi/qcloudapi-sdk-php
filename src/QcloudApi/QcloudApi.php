@@ -202,6 +202,12 @@ class QcloudApi
     const MODULE_APIGATEWAY = 'apigateway';
 
     /**
+     * MODULE_TMT
+     * 机器翻译
+     */
+    const MODULE_TMT = 'tmt';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称

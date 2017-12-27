@@ -4,6 +4,7 @@ CHANGE LOG
 latest (now)
 ------------
 
+* add tmt module
 * add apigateway module
 * add dfw module
 * add scf module
