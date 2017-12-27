@@ -23,8 +23,8 @@ class QcloudApi_Common_Request
      * $_version
      * @var string
      */
-    protected static $_version = 'SDK_PHP_1.1';
-    
+    protected static $_version = 'SDK_PHP_2.0.3';
+
     /**
      * $_timeOut
      * 设置连接主机的超时时间
