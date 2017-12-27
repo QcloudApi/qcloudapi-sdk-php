@@ -196,6 +196,12 @@ class QcloudApi
     const MODULE_SCF = 'scf';
 
     /**
+     * MODULE_APIGATEWAY
+     * API网关
+     */
+    const MODULE_APIGATEWAY = 'apigateway';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
