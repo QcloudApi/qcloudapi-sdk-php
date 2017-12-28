@@ -1,15 +1,19 @@
+==========
 CHANGE LOG
 ==========
 
 latest (now)
-------------
+============
+
+2.0.4 (2017-12-28)
+==================
 
 * add redis module
 * add batch module
 * add ccs module
 
 2.0.3 (2017-12-27)
-------------------
+==================
 
 * add tmt module
 * add apigateway module
@@ -17,7 +21,7 @@ latest (now)
 * add scf module
 
 history
--------
+=======
 
 * [2017/11/16] 新增Cloudaudit模块
 * [2017/10/30] 新增Bgpip模块
