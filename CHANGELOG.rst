@@ -5,6 +5,7 @@ latest (now)
 ------------
 
 * add batch module
+* add ccs module
 
 2.0.3 (2017-12-27)
 ------------------

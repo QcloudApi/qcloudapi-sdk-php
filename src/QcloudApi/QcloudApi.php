@@ -214,6 +214,12 @@ class QcloudApi
     const MODULE_BATCH = 'batch';
 
     /**
+     * MODULE_CCS
+     * 容器服务
+     */
+    const MODULE_CCS = 'ccs';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
