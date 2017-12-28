@@ -4,6 +4,7 @@ CHANGE LOG
 latest (now)
 ------------
 
+* add redis module
 * add batch module
 * add ccs module
 

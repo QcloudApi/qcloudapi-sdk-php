@@ -220,6 +220,12 @@ class QcloudApi
     const MODULE_CCS = 'ccs';
 
     /**
+     * MODULE_REDIS
+     * 弹性缓存
+     */
+    const MODULE_REDIS = 'redis';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
