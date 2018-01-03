@@ -226,6 +226,12 @@ class QcloudApi
     const MODULE_REDIS = 'redis';
 
     /**
+     * MODULE_PARTNERS
+     * 渠道合作伙伴
+     */
+    const MODULE_PARTNERS = 'partners';
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称

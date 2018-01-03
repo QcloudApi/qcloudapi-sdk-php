@@ -5,6 +5,8 @@ CHANGE LOG
 latest (now)
 ============
 
+* add partners module
+
 2.0.4 (2017-12-28)
 ==================
 
