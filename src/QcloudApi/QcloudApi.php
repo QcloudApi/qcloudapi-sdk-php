@@ -232,6 +232,11 @@ class QcloudApi
     const MODULE_PARTNERS = 'partners';
 
     /**
+     * MODULE_STS
+     */
+	const MODULE_STS = "sts";
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
