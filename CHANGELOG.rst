@@ -5,6 +5,9 @@ CHANGE LOG
 latest (now)
 ============
 
+2.0.5 (2018-02-06)
+==================
+
 * add sts module
 * add partners module
 
