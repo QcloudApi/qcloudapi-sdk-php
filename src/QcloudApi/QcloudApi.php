@@ -237,6 +237,12 @@ class QcloudApi
 	const MODULE_STS = "sts";
 
     /**
+     * MODULE_ATHENA
+     * 金融智能客服
+     */
+    const MODULE_ATHENA = "athena";
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
