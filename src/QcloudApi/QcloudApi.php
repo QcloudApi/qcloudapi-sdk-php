@@ -249,6 +249,12 @@ class QcloudApi
     const MODULE_TBAAS = "tbaas";
 
     /**
+     * MODULE_EMR
+     * 弹性 MapReduce
+     */
+    const MODULE_EMR = "emr";
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
