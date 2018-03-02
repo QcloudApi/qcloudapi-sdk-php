@@ -243,6 +243,12 @@ class QcloudApi
     const MODULE_ATHENA = "athena";
 
     /**
+     * MODULE_TBAAS
+     * 区块链服务
+     */
+    const MODULE_TBAAS = "tbaas";
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称

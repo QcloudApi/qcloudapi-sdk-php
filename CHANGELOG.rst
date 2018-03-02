@@ -5,6 +5,7 @@ CHANGE LOG
 latest (now)
 ============
 
+* add tbaas module
 * add athena module
 
 2.0.5 (2018-02-06)
