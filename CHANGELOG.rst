@@ -5,6 +5,9 @@ CHANGE LOG
 latest (now)
 ============
 
+2.0.6 (2018-03-02)
+==================
+
 * add emr module
 * add tbaas module
 * add athena module
