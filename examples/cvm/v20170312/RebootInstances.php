@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting(E_ALL);
 require_once dirname(__FILE__).'/../../../src/QcloudApi/QcloudApi.php';
 
 

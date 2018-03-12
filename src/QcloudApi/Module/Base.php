@@ -241,7 +241,7 @@ abstract class QcloudApi_Module_Base extends QcloudApi_Common_Base
             return false;
         }
 
-        if ($rawResponse['code']) {
+        if (isset($rawResponse['code']) && $rawResponse['code']) {
             $ext = '';
             require_once QCLOUDAPI_ROOT_PATH . '/Common/Error.php';
             if (isset($rawResponse['detail'])) {
