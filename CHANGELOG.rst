@@ -5,6 +5,8 @@ CHANGE LOG
 latest (now)
 ============
 
+* add ccr module
+
 2.0.6 (2018-03-02)
 ==================
 

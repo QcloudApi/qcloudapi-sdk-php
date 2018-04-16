@@ -255,6 +255,12 @@ class QcloudApi
     const MODULE_EMR = "emr";
 
     /**
+     * MODULE_CCR
+     * 腾讯云容器仓库服务
+     */
+    const MODULE_CCR = "ccr";
+
+    /**
      * load
      * 加载模块文件
      * @param  string $moduleName   模块名称
