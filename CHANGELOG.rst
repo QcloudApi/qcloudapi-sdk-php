@@ -5,6 +5,8 @@ CHANGE LOG
 latest (now)
 ============
 
+* support dynamic module: Now user can directly use any product's API, no longer require adding its source code file in src/QcloudApi/Module.
+
 2.0.7 (2018-04-16)
 ==================
 
