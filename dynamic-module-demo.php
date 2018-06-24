@@ -6,20 +6,18 @@ $config = array('SecretId'       => getenv("QCLOUD_SECRET_ID"), //'你的secretI
                 'RequestMethod'  => 'GET',
                 'DefaultRegion'  => 'gz');
 
-$cvm = QcloudApi::load(QcloudApi::MODULE_CVM, $config);
+// ckafa is not explicitly supported in src/QcloudApi/Module
+$ckafka = QcloudApi::load("ckafka", $config);
 
-$package = array('offset' => 0, 'limit' => 3, 'SignatureMethod' =>'HmacSHA256');
-
-$a = $cvm->DescribeInstances($package);
-// $a = $cvm->generateUrl('DescribeInstances', $package);
+$a = $ckafka->ListInstance();
 
 if ($a === false) {
-    $error = $cvm->getError();
+    $error = $ckafka->getError();
     echo "Error code:" . $error->getCode() . ".\n";
     echo "message:" . $error->getMessage() . ".\n";
     echo "ext:" . var_export($error->getExt(), true) . ".\n";
 }
 
-echo "Request: " . $cvm->getLastRequest();
-echo "\nResponse: " . $cvm->getLastResponse();
+echo "Request: " . $ckafka->getLastRequest();
+echo "\nResponse: " . $ckafka->getLastResponse();
 echo "\n";

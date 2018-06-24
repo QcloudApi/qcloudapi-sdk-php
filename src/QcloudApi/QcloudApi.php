@@ -271,17 +271,23 @@ class QcloudApi
     {
         $moduleName = ucfirst($moduleName);
         $moduleClassFile = QCLOUDAPI_ROOT_PATH . '/Module/' . $moduleName . '.php';
+        $moduleClassName = 'QcloudApi_Module_' . $moduleName;
 
         if (!file_exists($moduleClassFile)) {
-            return false;
+            $moduleClassFile = QCLOUDAPI_ROOT_PATH . '/Module/Morphling.php';
+            $moduleClassName = 'QcloudApi_Module_Morphling';
+            $isMorphling = true;
         }
 
         require_once $moduleClassFile;
-        $moduleClassName = 'QcloudApi_Module_' . $moduleName;
         $moduleInstance = new $moduleClassName();
 
         if (!empty($moduleConfig)) {
             $moduleInstance->setConfig($moduleConfig);
+        }
+
+        if ( $isMorphling ) {
+            $moduleInstance->setServerHost(lcfirst($moduleName));
         }
 
         return $moduleInstance;
