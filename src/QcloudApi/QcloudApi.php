@@ -286,7 +286,7 @@ class QcloudApi
             $moduleInstance->setConfig($moduleConfig);
         }
 
-        if ( $isMorphling ) {
+        if ( isset($isMorphling) && $isMorphling ) {
             $moduleInstance->setServerHost(lcfirst($moduleName));
         }
 
