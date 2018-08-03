@@ -23,7 +23,7 @@ class QcloudApi_Common_Request
      * $_version
      * @var string
      */
-    protected static $_version = 'SDK_PHP_2.0.8';
+    protected static $_version = 'SDK_PHP_2.0.9';
 
     /**
      * $_timeOut
